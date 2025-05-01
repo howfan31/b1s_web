@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PGP 加密技術</title>
+  <link rel="stylesheet" href="../../../CSS/style.css" />
+</head>
+<body>
+  <header>
+    <h1>BONES SECURITY TECHNOLOGY</h1>
+    <nav>
+      <a href="../../../pages/mainpage">首頁</a>
+      <a href="../../../pages/services">文章列表</a>
+    </nav>
+  </header>
+
+  <section class="hero2">
+    <h2>PGP 加密技術安全性與匿名性分析</h2>
+  </section>
+
+  <section class="description">
+    <h2>PGP 加密技術安全性、匿名性與可被偵測性分析</h2>
+    <ul>
+      <li><strong>端對端加密</strong>：使用公開金鑰加密，僅擁有對應私鑰者能解密，內容在傳輸過程中不可讀。</li>
+      <li><strong>身份驗證</strong>：透過數位簽章機制，接收方能驗證發件人身份，防止中間人攻擊。</li>
+      <li><strong>開放標準</strong>：遵循 OpenPGP 標準（RFC 4880），廣泛實作於各種應用程式中，並經受多年考驗。</li>
+      <li><strong>匿名性依賴使用方式</strong>：若金鑰對應到真實身份或公開郵箱，則匿名性降低；若匿名註冊使用，匿名性極高。</li>
+      <li><strong>潛在弱點</strong>：若私鑰管理不善（如私鑰洩漏或弱密碼保護），加密無法保障。</li>
+      <li><strong>可被偵測性</strong>：加密封包格式容易被識別為 PGP，雖然內容加密，但能辨識為「有人在用加密技術」。</li>
+    </ul>
+
+    <h3>總結：</h3>
+    <ul>
+      <li>匿名性：高（若搭配匿名信箱及匿名產生金鑰）</li>
+      <li>安全性：極高（只要私鑰保護得當）</li>
+      <li>可被偵測性：中（流量可被識別，但內容無法解密）</li>
+      <li>適用場景：機密通訊、重要文件加密、匿名聯絡</li>
+      <li>建議：搭配 Tor/VPN 環境匿名產生金鑰，避免將公鑰與真實身份綁定</li>
+    </ul>
+
+    <nav><a href="https://www.openpgp.org/">--> OpenPGP 官方網站 <--</a></nav>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bones Security Technology. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+

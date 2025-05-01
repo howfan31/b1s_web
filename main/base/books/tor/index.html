@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tor Network</title>
+  <link rel="stylesheet" href="../../../CSS/style.css" />
+</head>
+<body>
+  <header>
+    <h1>BONES SECURITY TECHNOLOGY</h1>
+    <nav>
+      <a href="../../../pages/mainpage">首頁</a>
+      <a href="../../../pages/services">文章列表</a>
+    </nav>
+  </header>
+
+  <section class="hero2">
+    <h2>Tor 網路安全性與匿名性分析</h2>
+  </section>
+
+  <section class="description">
+    <h2>Tor Network 安全性、匿名性與可被偵測性分析</h2>
+    <ul>
+      <li><strong>分層加密傳輸（Onion Routing）</strong>：數據在三個隨機節點之間多層加密，每一層只知道上下游節點，無法得知完整來源與目的地。</li>
+      <li><strong>節點分布全球</strong>：Tor 網路節點由志願者提供，沒有單一控制點，提升去中心化特性與抵抗審查能力。</li>
+      <li><strong>流量難以攔截</strong>：傳輸經過多跳轉，且每一跳都重新加密，增加被攔截與流量分析的難度。</li>
+      <li><strong>支援隱藏服務（.onion 網站）</strong>：提供完全匿名的伺服器端，伺服器真實 IP 不會曝光。</li>
+      <li><strong>潛在弱點</strong>：若進出口節點遭監控，配合流量大小與時間特徵分析（Traffic Correlation Attack），仍有一定機率推測用戶身份。</li>
+      <li><strong>被偵測風險</strong>：Tor 流量模式特徵明顯，雖然加密，但可被網路監控系統標記與封鎖（如中國防火長城 GFW 封鎖 Tor 使用）。</li>
+    </ul>
+
+    <h3>總結：</h3>
+    <ul>
+      <li>匿名性：高（但需避免與真實身份資料交叉）</li>
+      <li>安全性：中高（進出口節點為潛在風險點）</li>
+      <li>可被偵測性：高（流量特徵易被辨識）</li>
+      <li>適用場景：需要突破審查、匿名通訊、暗網瀏覽</li>
+      <li>建議：搭配 VPN / 多重跳板使用以增強匿名層次</li>
+    </ul>
+
+    <nav><a href="https://www.torproject.org/">--> Tor 官方網站 <--</a></nav>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Bones Security Technology. All rights reserved.</p>
+  </footer>
+</body>
+</html>
+
